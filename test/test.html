@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Creators</title>
+    <title>SW</title>
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <link rel="stylesheet" href="ll.css" type="text/css">
@@ -31,8 +31,16 @@
       <!-- </center> -->
         </nav>
       </header>
-      <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=7766464322&app_id=1" width="700" height="240"></iframe>
-  </body>
+      <!-- <div id = "audioplayer"> -->
+        <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=7766464322&app_id=1" width="700" height="240"></iframe>
+        <!-- <iframe id="dzplayer" scrolling="no" frameborder="0" allowtransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=7766464322&app_id=1" width="700" height="200"></iframe> -->
+        <!-- <label class="container">One
+            <input id = "check_autopl" type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label> -->
+        <!-- </div> -->
+      
+    </body>
   <footer id = "Footer">
     <div>
       <section>
@@ -44,7 +52,19 @@
     </div>
   </footer>
   <script type = "text/javascript">
-
+    // function check_auto_timer(){
+    //     setTimeout(function check_autopl(){
+    //         if(document.getElementById("check_autopl").checked == true)
+    //         {
+    //             document.getElementById("dzplayer").src = "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=7766464322&app_id=1" 
+    //         }
+    //         else
+    //         {
+    //             document.getElementById("dzplayer").src = "https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=7766464322&app_id=1";
+    //         }
+    //     },5000)
+        
+    // }
     // document.getElementById("drop0").addEventListener("onclick", mouseEnter0);
     // document.getElementById("drop0").addEventListener("mouseleave", mouseLeave0);
     
@@ -56,80 +76,80 @@
     document.getElementById("drop3").addEventListener("onclick", mouseEnter3);  
     document.getElementById("drop3").addEventListener("mouseleave", mouseLeave3);
     
-    let b_m = document.getElementById("acc");
-    let dr = document.getElementById("drop0_1");
-    b_m.addEventListener("click", () =>{
-      if(getComputedStyle(dr).display != "none"){
-        // dr.style.display = "none";
-        mouseLeave0();
-      }
-      else
-      {
-        // dr.style.display = "block";
-        leaveall();
-        // document.getElementById("Footer").style.transform = "translate(0px, 65px)";
-        // document.getElementById("Footer").style.transitionDuration = "0.3s";
-        // document.getElementById("text_Animals").style.transform = "translate(0px 65px)";
-        document.getElementById("drop0_1").style.display = "block";   
-        document.getElementById("drop0_1").style.borderRadius = "10px";
-        // document.getElementById("drop0_1").style.tranform = "translate3d(254px 130px 0px)"
-        document.getElementById("acc").innerHTML = "Accueil <img width='20px' src='../icons/round_keyboard_arrow_left_black_18dp.png'>";
-      }
-    })
-    let b_ma = document.getElementById("mamif");
-    let dra = document.getElementById("drop1_1");
-    b_ma.addEventListener("click", () =>{
-      if(getComputedStyle(dra).display != "none"){
-        // dr.style.display = "none";
+    // let b_m = document.getElementById("acc");
+    // let dr = document.getElementById("drop0_1");
+    // b_m.addEventListener("click", () =>{
+    //   if(getComputedStyle(dr).display != "none"){
+    //     // dr.style.display = "none";
+    //     mouseLeave0();
+    //   }
+    //   else
+    //   {
+    //     // dr.style.display = "block";
+    //     leaveall();
+    //     // document.getElementById("Footer").style.transform = "translate(0px, 65px)";
+    //     // document.getElementById("Footer").style.transitionDuration = "0.3s";
+    //     // document.getElementById("text_Animals").style.transform = "translate(0px 65px)";
+    //     document.getElementById("drop0_1").style.display = "block";   
+    //     document.getElementById("drop0_1").style.borderRadius = "10px";
+    //     // document.getElementById("drop0_1").style.tranform = "translate3d(254px 130px 0px)"
+    //     document.getElementById("acc").innerHTML = "Accueil <img width='20px' src='../icons/round_keyboard_arrow_left_black_18dp.png'>";
+    //   }
+    // })
+    // let b_ma = document.getElementById("mamif");
+    // let dra = document.getElementById("drop1_1");
+    // b_ma.addEventListener("click", () =>{
+    //   if(getComputedStyle(dra).display != "none"){
+    //     // dr.style.display = "none";
         
-        mouseLeave1();
-      }
-      else
-      {
-        // document.getElementById("text_Animals").style.transform = "translate(0px 5000px)";
-        // dr.style.display = "block";
-        mouseEnter1();
-        // document.getElementById("drop1_1").style.tranform = "translate3d(254px 130px 0px)"
-        // document.getElementById("text_Animals").style.transform = "translate(0px 5000px)";
-      }
-    }) 
+    //     mouseLeave1();
+    //   }
+    //   else
+    //   {
+    //     // document.getElementById("text_Animals").style.transform = "translate(0px 5000px)";
+    //     // dr.style.display = "block";
+    //     mouseEnter1();
+    //     // document.getElementById("drop1_1").style.tranform = "translate3d(254px 130px 0px)"
+    //     // document.getElementById("text_Animals").style.transform = "translate(0px 5000px)";
+    //   }
+    // }) 
      
-    let b_anim_sky = document.getElementById("anim_sky");
-    let dr_anim_sky = document.getElementById("Celeste");
-    b_anim_sky.addEventListener("click", () =>{
-      if(getComputedStyle(dr_anim_sky).display != "none"){
-        // dr.style.display = "none";
-        leaveanimal();
-      }
-      else
-      {
-        show_Celeste();
-      }
-    })
-    let b_anim_earth = document.getElementById("anim_earth");
-    let dr_anim_earth = document.getElementById("Terrestre");
-    b_anim_earth.addEventListener("click", () =>{
-      if(getComputedStyle(dr_anim_earth).display != "none"){
-        // dr.style.display = "none";
-        leaveanimal();
-      }
-      else
-      {
-        show_Terrestre();
-      }
-    })
-    let b_anim_sea = document.getElementById("anim_sea");
-    let dr_anim_sea = document.getElementById("Celeste");
-    b_anim_sea.addEventListener("click", () =>{
-      if(getComputedStyle(dr_anim_sea).display != "none"){
-        // dr.style.display = "none";
-        leaveanimal();
-      }
-      else
-      {
-        show_Maritime();
-      }
-    })
+    // let b_anim_sky = document.getElementById("anim_sky");
+    // let dr_anim_sky = document.getElementById("Celeste");
+    // b_anim_sky.addEventListener("click", () =>{
+    //   if(getComputedStyle(dr_anim_sky).display != "none"){
+    //     // dr.style.display = "none";
+    //     leaveanimal();
+    //   }
+    //   else
+    //   {
+    //     show_Celeste();
+    //   }
+    // })
+    // let b_anim_earth = document.getElementById("anim_earth");
+    // let dr_anim_earth = document.getElementById("Terrestre");
+    // b_anim_earth.addEventListener("click", () =>{
+    //   if(getComputedStyle(dr_anim_earth).display != "none"){
+    //     // dr.style.display = "none";
+    //     leaveanimal();
+    //   }
+    //   else
+    //   {
+    //     show_Terrestre();
+    //   }
+    // })
+    // let b_anim_sea = document.getElementById("anim_sea");
+    // let dr_anim_sea = document.getElementById("Celeste");
+    // b_anim_sea.addEventListener("click", () =>{
+    //   if(getComputedStyle(dr_anim_sea).display != "none"){
+    //     // dr.style.display = "none";
+    //     leaveanimal();
+    //   }
+    //   else
+    //   {
+    //     show_Maritime();
+    //   }
+    // })
     function mouseLeave0()
     {
       leaveall();
@@ -204,31 +224,31 @@
       document.getElementById("whoru").innerHTML = "Qui sommes-nous ↓";
     }
     
-    function show_Celeste()
-    {
-      leaveanimal();
-      document.getElementById("Footer").style.bottom ="27px";
-      document.getElementById("allrights").style.bottom ="0";
+    // function show_Celeste()
+    // {
+    //   leaveanimal();
+    //   document.getElementById("Footer").style.bottom ="27px";
+    //   document.getElementById("allrights").style.bottom ="0";
   
-      document.getElementById('Celeste').style.display = 'block';
-      leaveall();
-    }
-    function show_Terrestre()
-    {
-      leaveanimal();
-      document.getElementById("Footer").style.bottom ="27px";
-      document.getElementById("allrights").style.bottom ="0";
-      document.getElementById('Terrestre').style.display = 'block';
-      leaveall();
-    }
-    function show_Maritime()
-    {
-      leaveanimal();
-      document.getElementById("Footer").style.bottom ="27px";
-      document.getElementById("allrights").style.bottom ="0";
-      document.getElementById('Maritime').style.display = 'block';
-      leaveall();
-    }
+    //   document.getElementById('Celeste').style.display = 'block';
+    //   leaveall();
+    // }
+    // function show_Terrestre()
+    // {
+    //   leaveanimal();
+    //   document.getElementById("Footer").style.bottom ="27px";
+    //   document.getElementById("allrights").style.bottom ="0";
+    //   document.getElementById('Terrestre').style.display = 'block';
+    //   leaveall();
+    // }
+    // function show_Maritime()
+    // {
+    //   leaveanimal();
+    //   document.getElementById("Footer").style.bottom ="27px";
+    //   document.getElementById("allrights").style.bottom ="0";
+    //   document.getElementById('Maritime').style.display = 'block';
+    //   leaveall();
+    // }
     //LEAVE ALL
     function leaveall(){
       document.getElementById("drop0_1").style.display = "none";
@@ -237,20 +257,21 @@
       document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
       document.getElementById("gamertime").innerHTML = "A vous de jouer <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
       document.getElementById("whoru").innerHTML = "Qui sommes-nous <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";  
-      document.getElementById("Footer").style.bottom ="27px";
-      document.getElementById("allrights").style.bottom ="0";
+      
+    //   document.getElementById("allrights").style.bottom ="0";
     }
-    function leaveanimal()
-    { 
-      document.getElementById('Celeste').style.display = 'none';
-      document.getElementById('Terrestre').style.display = 'none';
-      document.getElementById('Maritime').style.display = 'none';
-      // document.getElementById("Celeste").style.transform = "translate(0px 0px)";
-      // document.getElementById("Maritime").style.transform = "translate(0px 0px)";
-      // document.getElementById("Terrestre").style.transform = "translate(0px 0px)";
-    } 
+    // function leaveanimal()
+    // { 
+    //   document.getElementById('Celeste').style.display = 'none';
+    //   document.getElementById('Terrestre').style.display = 'none';
+    //   document.getElementById('Maritime').style.display = 'none';
+    //   // document.getElementById("Celeste").style.transform = "translate(0px 0px)";
+    //   // document.getElementById("Maritime").style.transform = "translate(0px 0px)";
+    //   // document.getElementById("Terrestre").style.transform = "translate(0px 0px)";
+    // } 
+    // window.onload = leaveanimal();
     window.onload = leaveall();
-    window.onload = leaveanimal();
     
+    // window.onload = check_auto_timer();
     </script>
   </html>
