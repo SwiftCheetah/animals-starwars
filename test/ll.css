@@ -1,4 +1,7 @@
-*{ margin: 0; padding:0; box-sizing: border-box; font-family: "Roboto, Helvetica, Arial, sans-serif";}
+*{ margin: 0; padding:0; box-sizing: border-box; font-family: "Roboto, Helvetica, Arial, sans-serif"; }
+*.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+}
 html
 {
     border: none;
@@ -51,8 +54,9 @@ nav ul li
     z-index: 1000;
 }
 
-nav ul button
+nav ul button, nav ul a
 {
+    text-decoration: none;
     font-size: 25px;
     color: #12538a;
     background-color: #9cc3ea;
@@ -82,7 +86,7 @@ nav ul::after{
     clear: both;
 }
 
-nav a
+/* nav a
 {
     display: block;
     text-decoration: none;
@@ -91,19 +95,20 @@ nav a
     border-bottom: 2px solid transparent;
     padding: 10px 10px;
     transition: all 0.6s ease-out;
-}
+} */
 nav >ul li a:hover, ul button:hover
 {
     color: #9cc3ea;
     background-color: #12538a;
     border-radius: 15px;
     border-bottom: 2px solid gold;
+    transition: all 0.3s ease-out;
 }
 .dropdown
 {
     width: unset;
 }
-.dropdown-content 
+.dropdown-content
 {
     /* display: none; */
     box-shadow: 0px 1px 2px #CCC;
@@ -147,6 +152,7 @@ nav > ul li:hover .dropdown-content
 .dropdown-content li a,.dropdown-content li button
 {
     font-size: 25px;
+    /* font-weight: bold; */
     background-color: inherit;
     transition: all 1s ease-out;
     display: inline-block;
@@ -156,37 +162,24 @@ nav > ul li:hover .dropdown-content
     position : relative;
     z-index:1000;
 }
+
 .dropdown-content li:after
 {
     position: absolute;
     z-index: inherit;
 }
-.dropdown-content li a:hover,.dropdown-content li button:hover
+.dropdown-content li a:hover,.dropdown-content li button:hover,ol nav ul button:hover
 {
     border-radius: 20px;
     border-bottom: none;
     color: #9cc3ea;
-    background-color: #12538a;
-    
+    background-color: #12538a;   
 }
 
 .dropdown > a::after
 {
     font-size: 25px;
 }
-/* .animal{
-    display: block;
-    list-style-type: none;
-    padding-inline-start:0px;
-    position:relative;
-    text-align:center;
-    padding:5px 1% 1%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 12em;
-    margin-top: 5px;
-    margin-bottom: auto;
-} */
 
 
 /*******/
@@ -194,7 +187,7 @@ nav > ul li:hover .dropdown-content
 ol{
     padding-bottom: 65px;
 }
-ol div
+ol div, ol nav
 {
     max-width: 100%;
     text-align: center;
@@ -204,7 +197,37 @@ ol div
     z-index:1;
     margin-bottom: 10px;
 }
-ol div li {
+
+ol nav ul
+{
+    display: inline-block;
+    text-align: center;
+}
+ol nav ul button
+{
+    /* font-style: italic; */
+    font-variant: small-caps;
+    font-size: 24px;
+    transition: all 1s ease-out;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: none;
+    position : relative;
+    z-index:1000;
+}
+ol nav ul button:focus, nav ul button{
+    outline: 0;
+}
+ol li, ol li button
+{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+}
+ol div li,ol li {
     font-size: 25px;
     font-family: verdana, Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique 80deg;
@@ -253,6 +276,121 @@ ol div img:hover
     opacity: 0.65;
 }
 
+
+
+
+
+
+/******/
+/* The Modal (background) */
+/* tiré de https://www.w3schools.com/howto/howto_css_modal_images.asp */
+
+.imgclick {
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    /* Stay in place */
+    z-index: 1001;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  /* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-content:hover /*ajouter pour annuler l'effet hover de la page*/
+{
+    opacity: unset;
+    box-shadow: none;
+}
+  
+  /* Caption of Modal Image */
+#caption4,#capition5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+  /* Add Animation */
+.modal-content, #caption4, #caption5 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.4s;
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+} 
+  
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;/*ajouter par nous*/
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
 
 /********/
 /*A Vous De Jouer*/
@@ -310,79 +448,11 @@ ol div img:hover
     position: absolute;
     display: none;
   }
-  
+    
 
-
-
-
-/******/
-/* The Modal (background) */
-/* .modal { */
-    /* display: none; /*Hidden by default */
-    /* position: fixed; /*Stay in place */
-    /* z-index: 1; /*Sit on top */
-    /* padding-top: 100px; /*Location of the box */
-    /*left: 0;*/
-    /*top: 0;*/
-    /*width: 100%; /* Full width */
-    /*height: 100%; /* Full height */
-    /*overflow: auto; /* Enable scroll if needed */
-    /*background-color: rgb(0,0,0); /* Fallback color */
-    /*background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  /* } */
-  
-  /* Modal Content (image) */
-  /* .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  } */
-  
-  /* Caption of Modal Image */
-  /* #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  } */
-  
-  /* Add Animation */
-  /* .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  } */
-  
-  /* The Close Button */
-  /* .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  } */
- 
-  
-
-
+/* .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+} */
 
 
 
@@ -423,7 +493,7 @@ ol div img:hover
     text-align: center;
     position: relative;/*mettre js style position fixed quand rien afficher*/
     width: 100%;
-    /* bottom:2px; */
+    margin-top: 5vh;
     /* margin-bottom: 27px; */
     /* margin-top: 50vh; */
 }
