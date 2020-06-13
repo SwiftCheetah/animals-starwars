@@ -19,6 +19,7 @@ header{
     background-position: all;
 }
 nav{
+    padding-bottom: 20px;
     justify-items: center;
     -webkit-box-pack: center;
     justify-content: center;
@@ -185,6 +186,7 @@ nav > ul li:hover .dropdown-content
 /*******/
 /*ANIMALS*/
 ol{
+    z-index: 1;
     padding-bottom: 65px;
 }
 ol div, ol nav
@@ -197,7 +199,9 @@ ol div, ol nav
     z-index:1;
     margin-bottom: 10px;
 }
-
+ol nav{
+    z-index: 990;
+}
 ol nav ul
 {
     display: inline-block;
@@ -214,7 +218,7 @@ ol nav ul button
     border-radius: 10px;
     border-bottom: none;
     position : relative;
-    z-index:1000;
+    z-index:990;
 }
 ol nav ul button:focus, nav ul button{
     outline: 0;
@@ -226,6 +230,7 @@ ol li, ol li button
     position: relative;
     text-align: center;
     max-width: 100%;
+    z-index: 1;
 }
 ol div li,ol li {
     font-size: 25px;
@@ -246,15 +251,16 @@ ol div li,ol li {
     max-width: 750px;
     padding-right: 0.5%;
     padding-left: 0.5%;
+    z-index: 1;
 }
 ol div li:hover {
     background-color:  #4682b4;
     border: #12538a 4px solid;
     color: #9cc3ea;
-    
 }
 ol div img
 {
+    z-index: 1;
     margin-bottom: 15px;
     margin-top: 10px;
     margin-left: 25%;
@@ -320,6 +326,10 @@ ol div img:hover
     /* Black w/ opacity */
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 50%;
+    padding-top: 50%;
 }
   
   /* Modal Content (image) */
@@ -336,19 +346,20 @@ ol div img:hover
 }
   
   /* Caption of Modal Image */
-#caption4,#capition5 {
+#caption {
+    font-size: 25px;
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
+    color: #6aa0cc;
     padding: 10px 0;
     height: 150px;
 }
   
   /* Add Animation */
-.modal-content, #caption4, #caption5 {  
+.modal-content, #caption {  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.4s;
     animation-name: zoom;
@@ -365,7 +376,7 @@ ol div img:hover
     to {transform:scale(1)}
 } 
   
-  /* The Close Button */
+  /* The Close Button
 .close {
     position: absolute;
     top: 15px;
@@ -375,13 +386,13 @@ ol div img:hover
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;/*ajouter par nous*/
-}
+/* }
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
+} */ 
 
 
 /* 100% Image Width on Smaller Screens */
@@ -440,6 +451,8 @@ ol div img:hover
 
   .container input:checked ~ .checkmark {
     background-color: #2196F3;
+  } .container input:checked:hover ~ .checkmark {
+    background-color: #12538a;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
