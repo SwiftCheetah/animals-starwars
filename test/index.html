@@ -18,74 +18,14 @@
               <li><a href = "https://myefrei.fr">Myefrei</a></li>
             </ul>
           </li>
-          <li id = "drop1" class = "dropdown"><button id = "mamif">Animaux</button>
-            <ul id = "drop1_1" class = "dropdown-content">
-              <li><button id = "anim_sky">Animaux célestes</button></li>
-              <li><button id = "anim_earth">Animaux terrestres</button></li>
-              <li><button id = "anim_sea">Animaux maritimes</button></li>
-            </ul>
-          </li>
+          <li id = "drop1" class = "dropdown"><a href ="animals.html">Animaux</a></li>
           <li id = "drop2" class = "dropdown"><button id = "gamertime" onclick = "location.href='test.html'">A vous de jouer</button></li>
           <li id = "drop3" class = "dropdown"><a href = "creators.html" tittle = "Me contacter"><span id = "whoru">Qui sommes-nous</span></a></li>
         </ul>
       <!-- </center> -->
         </nav>
       </header>
-      <ol id = "text_Animals">
-        <br/>
-
-        <!--- we can use either ol or ul depending on the situation-->
-        <div id = "Maritime">
-          <li class="animal">Animaux Dans La Mer</li>
-          
-          <li>Le plus rapide : Le Poisson Voilier allant jusqu’à 110km/h. Il est de la même espèce que l’Espada. Son nom vient de sa grande nageoire en forme de voile.</li>
-          
-          <img src="../Images/Animals/Poisson Voilier.jpg" width="300" height="200">
-          
-          <li>Le plus dangereux : Le Grand Requin Blanc, une taille de 6m de longueur, chasse généralement des tortues, thons et crétacés. Chasse le sang. Cette espèce est menacée par la surpêche et par la pollution.</li>
-          
-          
-          <img src="../Images/Animals/Grand Requin Blanc.jpg" width="300" height="200">
-          
-          <li>Le favori : Le dauphin ; il est intelligent et capable de communiquer par ultrason. Il ressemble à un requin mais semble plus apprécié et plus gentil.</li>
-          
-          <img src="../Images/Animals/Dauphin.jpg" width="300" height="200">
-        </div>
-        <div id = "Terrestre">
-          <li class="animal">Animaux Sur Terre</li>
-          
-          <li>Le plus rapide : Le Guépard, il peut aller jusqu’à environ 120km/h lors de ses chasses, il peut courir jusqu’à en mourir (mais sa vitesse diminue petit à petit). C’est un félin sauvage qui chasse généralement par groupe de 2 ou 3. Il ressemble à un léopard avec des larmes noires.</li>
-          
-          <img src="../Images/Animals/Guepard.jpg" width="300" height="200">
-          
-          <li>Le plus dangereux : Le Cobra Royal, il a un des venins les plus dangereux du monde. Ses morsures sont mortelles, il vaut mieux éviter de se faire mordre. Il a une sorte de cape.</li>
-          
-          <img src="../Images/Animals/Cobra Royal.jpg" width="300" height="200">
-          
-          <li>Le favori : Le Loup, c’est un canidé connu aussi comme le cousin du chien. Il fascine les humains qui le mettent dans leurs mythes, légendes et qui s’en inspirent même dans l’art. Ils vivent en meute et se transforment les soirs de pleine lune (restez chez vous).</li>
-          
-          <img src="../Images/Animals/Loup.jpg" width="300" height="200">
-        </div>
-          
-          
-        <div id = "Celeste">
-          <li class="animal">Animaux Dans Le Ciel</li>
-          
-          <li>Le plus rapide : Le Faucon Pèlerin est l’animal le plus rapide au monde, il peut faire des descentes en piqué lors de ses chasse jusqu’à 390km/h. Il a des yeux perçants et voit très bien de loin</li>
-          
-          <img src="../Images/Animals/Faucon Pelerin.jpg" width="300" height="200">
-          
-          <li>Le plus dangereux : Le Moustique est la cause de plus de 725000 morts par an, il est à l’origine d’un grand nombre d’épidémies et ne sert à rien à pas à causer des catastrophes.</li>
-          
-          <img src="../Images/Animals/Moustique.jpg" width="300" height="200">
-          
-          <li>Le favori : Le Condor est un des oiseaux les plus majestueux, connu comme étant le plus grand oiseau volant du monde avec plus de 3m de longueur, il pèse de 7.5 à 15kg.</li>
-          
-          <img src="../Images/Animals/Condor.jpg" width="300" height="200">
-        </div>
-          
-                   
-    </ol>
+     
   </body>
   <footer id = "Footer">
     <div>
@@ -103,8 +43,8 @@
   // document.getElementById("drop0").addEventListener("onclick", mouseEnter0);
   // document.getElementById("drop0").addEventListener("mouseleave", mouseLeave0);
   
-  document.getElementById("drop1").addEventListener("onclick", mouseEnter1);
-  document.getElementById("drop1").addEventListener("mouseleave", mouseLeave1);
+  // document.getElementById("drop1").addEventListener("onclick", mouseEnter1);
+  // document.getElementById("drop1").addEventListener("mouseleave", mouseLeave1);
   document.getElementById("drop2").addEventListener("onclick", mouseEnter2);
   document.getElementById("drop2").addEventListener("mouseleave", mouseLeave2);
 
@@ -124,66 +64,68 @@
       leaveall();
       // document.getElementById("Footer").style.transform = "translate(0px, 65px)";
       // document.getElementById("Footer").style.transitionDuration = "0.3s";
-      // document.getElementById("text_Animals").style.transform = "translate(0px 65px)";
+      // document.getElementById("textAnimals").style.transform = "translate(0px 65px)";
       document.getElementById("drop0_1").style.display = "block";   
       document.getElementById("drop0_1").style.borderRadius = "10px";
       // document.getElementById("drop0_1").style.tranform = "translate3d(254px 130px 0px)"
       document.getElementById("acc").innerHTML = "Accueil <img width='20px' src='../icons/round_keyboard_arrow_left_black_18dp.png'>";
     }
   })
-  let b_ma = document.getElementById("mamif");
-  let dra = document.getElementById("drop1_1");
-  b_ma.addEventListener("click", () =>{
-    if(getComputedStyle(dra).display != "none"){
-      // dr.style.display = "none";
+  // let b_ma = document.getElementById("mamif");
+  // let dra = document.getElementById("drop1_1");
+  // b_ma.addEventListener("click", () =>{
+  //   if(getComputedStyle(dra).display != "none"){
+  //     // dr.style.display = "none";
+  //     mouseLeave1();
+  //   }
+  //   else
+  //   {
+  //     // doc
+  //     // document.getElementById("textAnimals").style.transform = "translate(0px 5000px)";
+  //     // dr.style.display = "block";
+  //     mouseEnter1();
+  //     // document.getElementById("drop1_1").style.tranform = "translate3d(254px 130px 0px)"
+  //     // document.getElementById("textAnimals").style.transform = "translate(0px 5000px)";
+  //   }
+  // })  
+  // let b_anim_sky = document.getElementById("anim_sky");
+  // let dr_anim_sky = document.getElementById("Celeste");
+  // b_anim_sky.addEventListener("click", () =>{
+  //   if(getComputedStyle(dr_anim_sky).display != "none"){
+  //     // dr.style.display = "none";
+  //     leaveanimal();
+  //   }
+  //   else
+  //   {
+  //     show_Celeste();
+  //   }
+  // })
+  // // let b_anim_earth = document.getElementById("anim_earth");
+  // // let dr_anim_earth = document.getElementById("Terrestre");
+  // // b_anim_earth.addEventListener("click", () =>{
+  
+  // //   if(getComputedStyle(dr_anim_earth).display != "none"){
+  // //   //   // dr.style.display = "none";
+  // //     leaveanimal();
+  // //   }
+  // //   else
+  // //   {
       
-      mouseLeave1();
-    }
-    else
-    {
-      // document.getElementById("text_Animals").style.transform = "translate(0px 5000px)";
-      // dr.style.display = "block";
-      mouseEnter1();
-      // document.getElementById("drop1_1").style.tranform = "translate3d(254px 130px 0px)"
-      // document.getElementById("text_Animals").style.transform = "translate(0px 5000px)";
-    }
-  })  
-  let b_anim_sky = document.getElementById("anim_sky");
-  let dr_anim_sky = document.getElementById("Celeste");
-  b_anim_sky.addEventListener("click", () =>{
-    if(getComputedStyle(dr_anim_sky).display != "none"){
-      // dr.style.display = "none";
-      leaveanimal();
-    }
-    else
-    {
-      show_Celeste();
-    }
-  })
-  let b_anim_earth = document.getElementById("anim_earth");
-  let dr_anim_earth = document.getElementById("Terrestre");
-  b_anim_earth.addEventListener("click", () =>{
-    if(getComputedStyle(dr_anim_earth).display != "none"){
-      // dr.style.display = "none";
-      leaveanimal();
-    }
-    else
-    {
-      show_Terrestre();
-    }
-  })
-  let b_anim_sea = document.getElementById("anim_sea");
-  let dr_anim_sea = document.getElementById("Celeste");
-  b_anim_sea.addEventListener("click", () =>{
-    if(getComputedStyle(dr_anim_sea).display != "none"){
-      // dr.style.display = "none";
-      leaveanimal();
-    }
-    else
-    {
-      show_Maritime();
-    }
-  })
+  // //     show_Terrestre();
+  // //   }
+  // // })
+  // // let b_anim_sea = document.getElementById("anim_sea");
+  // let dr_anim_sea = document.getElementById("Celeste");
+  // b_anim_sea.addEventListener("click", () =>{
+  //   if(getComputedStyle(dr_anim_sea).display != "none"){
+  //     // dr.style.display = "none";
+  //     leaveanimal();
+  //   }
+  //   else
+  //   {
+  //     show_Maritime();
+  //   }
+  // })
 
   function mouseLeave0()
   {
@@ -191,44 +133,44 @@
     
     // document.getElementById("Footer").style.transitionDuration = "0.6s";
     // document.getElementById("Footer").style.transform = "translate(0px, 0px)";
-    // document.getElementById("text_Animals").style.transform = "translate(0px 0px)";
+    // document.getElementById("textAnimals").style.transform = "translate(0px 0px)";
     document.getElementById("acc").innerHTML = "Accueil <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
   }
   
   //Menu drop 2
-  function mouseEnter1()
-  {
-    leaveall();
-    document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_left_black_18dp.png'>";
-    // document.getElementById("Footer").style.transform = "translate(0px, 150px)";
-    // document.getElementById("Footer").style.transitionDuration = "0.3s";
+  // function mouseEnter1()
+  // {
+  //   leaveall();
+  //   document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_left_black_18dp.png'>";
+  //   // document.getElementById("Footer").style.transform = "translate(0px, 150px)";
+  //   // document.getElementById("Footer").style.transitionDuration = "0.3s";
       
     
-    // if(document.getElementById("Celeste").style.display != "none"){
-      // document.getElementById("Celeste").style.transform = "translate(0px 500px)";
-    // }
+  //   // if(document.getElementById("Celeste").style.display != "none"){
+  //     // document.getElementById("Celeste").style.transform = "translate(0px 500px)";
+  //   // }
     
-    // document.getElementById("Footer").style.transitionDuration = "0.3s";
-    // document.getElementById("Footer").style.transform = "translate(0px, 5000px)";
+  //   // document.getElementById("Footer").style.transitionDuration = "0.3s";
+  //   // document.getElementById("Footer").style.transform = "translate(0px, 5000px)";
     
-    // document.getElementById("drop1_1").style.zIndex = "1000";
-    document.getElementById("drop1_1").style.display = "block";
-    document.getElementById("drop1_1").style.borderRadius = "10px";
-    //paramètre pour que si c'est afficher,  grandnombre, sinon rien
+  //   // document.getElementById("drop1_1").style.zIndex = "1000";
+  //   document.getElementById("drop1_1").style.display = "block";
+  //   document.getElementById("drop1_1").style.borderRadius = "10px";
+  //   //paramètre pour que si c'est afficher,  grandnombre, sinon rien
     
-  }
-  function mouseLeave1()
-  {
-    leaveall();
-    document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
-    // document.getElementById("Footer").style.transitionDuration = "0.6s";
-    // document.getElementById("Footer").style.transform = "translate(0px, 0px)";
-  }
-  function mouseLeave1_2()
-  {
-    leaveall();
-    document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
-  }
+  // }
+  // function mouseLeave1()
+  // {
+  //   leaveall();
+  //   document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
+  //   // document.getElementById("Footer").style.transitionDuration = "0.6s";
+  //   // document.getElementById("Footer").style.transform = "translate(0px, 0px)";
+  // }
+  // function mouseLeave1_2()
+  // {
+  //   leaveall();
+  //   document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
+  // }
 
   function mouseEnter2()
   {
@@ -259,53 +201,73 @@
     document.getElementById("whoru").innerHTML = "Qui sommes-nous ↓";
   }
   
-  function show_Celeste()
-  {
-    leaveanimal();
-    document.getElementById("Footer").style.bottom ="27px";
-    document.getElementById("allrights").style.bottom ="0";
+  // function show_Celeste()
+  // {
+  //   leaveanimal();
+  //   document.getElementById("Footer").style.bottom ="27px";
+  //   document.getElementById("allrights").style.bottom ="0";
 
-    document.getElementById('Celeste').style.display = 'block';
-    leaveall();
-  }
-  function show_Terrestre()
-  {
-    leaveanimal();
-    document.getElementById("Footer").style.bottom ="27px";
-    document.getElementById("allrights").style.bottom ="0";
-    document.getElementById('Terrestre').style.display = 'block';
-    leaveall();
-  }
-  function show_Maritime()
-  {
-    leaveanimal();
-    document.getElementById("Footer").style.bottom ="27px";
-    document.getElementById("allrights").style.bottom ="0";
-    document.getElementById('Maritime').style.display = 'block';
-    leaveall();
-  }
+  //   document.getElementById('Celeste').style.display = 'block';
+  //   leaveall();
+  // }
+  // function show_Terrestre()
+  // {
+  //   leaveanimal();
+  //   document.getElementById("Footer").style.bottom ="27px";
+  //   document.getElementById("allrights").style.bottom ="0";
+  //   document.getElementById('Terrestre').style.display = 'block';
+  //   leaveall();
+  // }
+  // function show_Maritime()
+  // {
+  //   leaveanimal();
+  //   document.getElementById("Footer").style.bottom ="27px";
+  //   document.getElementById("allrights").style.bottom ="0";
+  //   document.getElementById('Maritime').style.display = 'block';
+  //   leaveall();
+  // }
+  // // Get the modal
+  // var modal = document.getElementById("myModal");
+
+  // // Get the image and insert it inside the modal - use its "alt" text as a caption
+  // var img = document.getElementById("myImg");
+  // var modalImg = document.getElementById("img01");
+  // var captionText = document.getElementById("caption");
+  // img.onclick = function(){
+  //   modal.style.display = "block";
+  //   modalImg.src = this.src;
+  //   captionText.innerHTML = this.alt;
+  // }
+
+  // // Get the <span> element that closes the modal
+  // var span = document.getElementsByClassName("close")[0];
+
+  // // When the user clicks on <span> (x), close the modal
+  // span.onclick = function() {
+  //   modal.style.display = "none";
+  // }
   //LEAVE ALL
   function leaveall(){
     document.getElementById("drop0_1").style.display = "none";
-    document.getElementById("drop1_1").style.display = "none";
+    // document.getElementById("drop1_1").style.display = "none";
     document.getElementById("acc").innerHTML = "Accueil <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
-    document.getElementById("mamif").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
+    // document.getElementById("drop1").innerHTML = "Animaux <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
     document.getElementById("gamertime").innerHTML = "A vous de jouer <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
     document.getElementById("whoru").innerHTML = "Qui sommes-nous <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";  
     document.getElementById("Footer").style.bottom ="27px";
     document.getElementById("allrights").style.bottom ="0";
   }
-  function leaveanimal()
-  { 
-    document.getElementById('Celeste').style.display = 'none';
-    document.getElementById('Terrestre').style.display = 'none';
-    document.getElementById('Maritime').style.display = 'none';
-    // document.getElementById("Celeste").style.transform = "translate(0px 0px)";
-    // document.getElementById("Maritime").style.transform = "translate(0px 0px)";
-    // document.getElementById("Terrestre").style.transform = "translate(0px 0px)";
-  } 
+  // function leaveanimal()
+  // { 
+  //   document.getElementById('Celeste').style.display = 'none';
+  //   document.getElementById('Terrestre').style.display = 'none';
+  //   document.getElementById('Maritime').style.display = 'none';
+  //   // document.getElementById("Celeste").style.transform = "translate(0px 0px)";
+  //   // document.getElementById("Maritime").style.transform = "translate(0px 0px)";
+  //   // document.getElementById("Terrestre").style.transform = "translate(0px 0px)";
+  // } 
   window.onload = leaveall();
-  window.onload = leaveanimal();
+  // window.onload = leaveanimal();
   
   </script>
   </html>
