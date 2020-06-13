@@ -1,49 +1,423 @@
 [
   {
-    "themeId": "Maritime",
-    "li": "Animaux",
-    "animals":[
-    {
-        "li": "",
-        "image":"",
-        "index" : "1"
-    },
-    {
-        "li": "",
-        "image":"",
-        "index" : "2"
-    }
-    ]
-  },
-  {
-    "themeId": "Terrestre",
-    "li": "Animaux",
-    "animals":[
-    {
-        "li": "",
-        "image":"",
-        "index" : "1"
-    },
-    {
-        "li": "",
-        "image":"",
-        "index" : "2"
-    }
-  ]
-  },
-  {
-    "themeId": "Celeste",
-    "li": "Animaux",
-    "animals":[
+    "Page": [
       {
-        "li": "",
-        "image":"",
-        "index" : "1"
+        "themePage": "StarWarsI",
+        "Elements": [
+          {
+            "ThemeId": "Republic",
+            "characters": [
+              {
+                "li": "Palpatine, senator of Naboo",
+                "image": "<img src='../Images/StarWars1/Palpatine_Senator.png'>",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Separatist",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Neutral",
+            "Themeelements": [
+              {
+                "characters": [
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "1"
+                  },
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
-        "li": "",
-        "image":"",
-        "index" : "2"
+        "themePage": "StarWarsII",
+        "Elements": [
+          {
+            "ThemeId": "Republic",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Separatist",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Neutral",
+            "Themeelements": [
+              {
+                "characters": [
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "1"
+                  },
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "themePage": "StarWarsIII",
+        "Elements": [
+          {
+            "ThemeId": "Republic",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Separatist",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Neutral",
+            "Themeelements": [
+              {
+                "characters": [
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "1"
+                  },
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "themePage": "StarWarsIV",
+        "Elements": [
+          {
+            "ThemeId": "Republic",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Separatist",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Neutral",
+            "Themeelements": [
+              {
+                "characters": [
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "1"
+                  },
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "themePage": "StarWarsV",
+        "ThemeId": "Republic",
+        "Themeelements": [
+          {
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "themePage": "StarWarsVI",
+        "ThemeId": "Republic",
+        "Themeelements": [
+          {
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "themePage": "StarWarsVII",
+        "Elements": [
+          {
+            "ThemeId": "Republic",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Separatist",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Neutral",
+            "Themeelements": [
+              {
+                "characters": [
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "1"
+                  },
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "themePage": "StarWarsVIII",
+        "Elements": [
+          {
+            "ThemeId": "Republic",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Separatist",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Neutral",
+            "Themeelements": [
+              {
+                "characters": [
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "1"
+                  },
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "themePage": "StarWarsIX",
+        "Elements": [
+          {
+            "ThemeId": "Republic",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Separatist",
+            "characters": [
+              {
+                "li": "",
+                "image": "",
+                "index": "1"
+              },
+              {
+                "li": "",
+                "image": "",
+                "index": "2"
+              }
+            ]
+          },
+          {
+            "ThemeId": "Neutral",
+            "Themeelements": [
+              {
+                "characters": [
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "1"
+                  },
+                  {
+                    "li": "",
+                    "image": "",
+                    "index": "2"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
