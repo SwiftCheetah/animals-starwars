@@ -5,16 +5,18 @@
                 {
                     "Republic": [
                         {
-                            "li1": {
-                                "li": "Palpatine, senator of Naboo",
-                                "image": "<img src='../images/starwars1/palpatine_senator.png'>",
-                                "index": "1"
-                            },
-                            "li2": {
-                                "li": "",
-                                "image": "",
-                                "index": "2"
-                            }
+                            "li1": [
+                                {
+                                    "li": "Palpatine, senator of Naboo",
+                                    "image": "<img src='../images/starwars1/palpatine_senator.png'>",
+                                    "index": "1"
+                                },
+                                {
+                                    "li": "",
+                                    "image": "",
+                                    "index": "2"
+                                }
+                            ]
                         }
                     ]
                 },
