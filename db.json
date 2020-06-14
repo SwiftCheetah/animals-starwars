@@ -11,52 +11,62 @@
                         },
                         {
                             "li": "Obi-Wan Kenobi, Padawan de Qui-Gon Jinn, Va vers Nabbo avec Palpatine. Ils Rencontrent des difficultées sur la route mais y survivent et sauvent la reine qui etait prisonnière",
-                            "image": "../images/starwarsi/obiwan",
+                            "image": "../images/starwarsi/obiwan.jpeg",
                             "index": "2"
                         },
                         {
                             "li": "Qui-Gon Jinn, Maître Jedi, libre de pensée, et contrairement à d'autres Jedi, il valorise de vivre dans le moment présent comme le meilleur moyen de communier avec la Force. En mission su ",
                             "image": "../images/starwarsi/liam-neesn-as-qui-gon-jinn.jpeg",
-                            "index": "2"
+                            "index": "3"
                         },
                         {
-                            "li": "Anakin Skywalker",
-                            "image": "",
-                            "index": "2"
+                            "li": "Anakin Skywalker, aussi connu comme le père de Luc Skywalker, est un gentil monsieur qui est allé du coté obscur",
+                            "image": "../images/starwarsi/Anakin.jpeg",
+                            "index": "4"
                         },
                         {
                             "li": "Haut conseil Jedi: corps gouvernant l'Ordre Jedi, il est composé de douze Maîtres Jedi, dont un qui était le Grand Maître. Ils se réunissent dans la Tour du Haut Conseil du Temple Jedi sur Coruscant",
-                            "image": "",
-                            "index": "2"
+                            "image": "../images/starwarsi/haut conseil.jpeg",
+                            "index": "5"
                         }
                     ]
                 },
                 {
                     "Separatist": [
                         {
-                            "li": "",
-                            "image": "",
+                            "li": "Une armée de droides connue comme une fédération qui profite du blocus de Naboo pour sécuriser son commerce, elle envahit souvent des civilisations pour mettre leur population en esclavage",
+                            "image": "../images/starwarsi/Droidarmy.jpeg",
                             "index": "1"
                         },
-                        {
-                            "li": "",
-                            "image": "",
+                         {
+                            "li": "Sidois, un Sith Lord qui manipule la fédération du commerce pour parvenir a mettre un terme a l'ordre Jedi, il influence et garde un oeil sur les débats du Sénat",
+                            "image": "../images/starwarsi/Sidois.jpeg",
                             "index": "2"
+                        },
+                        {
+                            "li": "Maul est un Apprenti de Sith, violent, féroce et considéré comme un adversaire redoutable",
+                            "image": "../images/starwarsi/Maul.jpeg",
+                            "index": "3"
+                        }
+                        {
+                            "li": "Nute Gunray, un grand homme connu comme le chef de l'invasion de Naboo",
+                            "image": "../images/starwarsi/Gunray.jpeg",
+                            "index": "4"
                         }
                     ]
                 },
                 {
                     "Neutral": [
                         {
-                            "li": "",
-                            "image": "",
+                            "li": "Shmi Skywalker, la mère d'anakin, ancienne esclave"
+                            "image": "../images/starwarsi/Shmi.jpeg",
                             "index": "1"
                         },
                         {
-                            "li": "",
-                            "image": "",
+                            "li": "Kgj est celui qui revient sur naboo pour affronter Darth maul avec son padawan. Il finit transpercé par Darth Maul"
+                            "image": "../images/starwarsi/Kgj.jpeg",
                             "index": "2"
-                        }
+                        },
                     ]
                 }
             ]
