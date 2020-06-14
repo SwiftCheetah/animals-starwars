@@ -39,12 +39,28 @@
                 {
                     "Separatist": [
                         {
-                            "li": "",
-                            "image": "",
+                            "li": "Armée de droides de la Fédération du Commerce",
+                            "image": "../images/starwars1/droidarmy.jpg",
+                            "alt" : "Armée de droides de la Fédération",
                             "index": "1"
                         },
                         {
-                            "li": "",
+                            "li": "Nute Gunray",
+                            "image": "",
+                            "index": "2"
+                        },
+                        {
+                            "li": "Darth Sidious",
+                            "image": "",
+                            "index": "2"
+                        },
+                        {
+                            "li": "Darth Maul",
+                            "image": "",
+                            "index": "2"
+                        },
+                        {
+                            "li": "Nute Gunray",
                             "image": "",
                             "index": "2"
                         }
