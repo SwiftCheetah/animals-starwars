@@ -20,8 +20,8 @@
                             "index": "2"
                         },
                         {
-                            "li": "Anakin Skywalker",
-                            "image": "",
+                            "li": "Anakin Skywalker, Luc's dad, good boy that's gone to the dark side, rest in peace", 
+                            "image": "../images/starwarsi/anakin.jpeg",
                             "index": "2"
                         },
                         {
@@ -35,7 +35,7 @@
                     "Separatist": [
                         {
                             "li": "",
-                            "image": "",
+                            "image": "../images/starwarsi/Separatist.png",
                             "index": "1"
                         },
                         {
