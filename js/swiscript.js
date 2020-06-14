@@ -114,7 +114,7 @@
      img.setAttribute("Id", "myImg");
      img.setAttribute("onclick", "showImg(this)");
      img.setAttribute("style","width:100%;max-width:300px");
-     img.setAttribute("alt", elemmalt);
+     img.setAttribute("alt", elemenalt);
      document.getElementById("Republic").appendChild(img);
   }
   // function getSeperatist()
