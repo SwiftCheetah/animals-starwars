@@ -83,7 +83,6 @@
       leaveall();
     }
   })
-
   function getRepublic()
   {
     var statistics = "https://my-json-server.typicode.com/MasterJediKnight/animals-starwars/Page"
@@ -117,34 +116,53 @@
      img.setAttribute("alt", obj.alt);
      document.getElementById("Republic").appendChild(img);
   }
-  // function getSeperatist()
-  // {
-  //   var statistics = "https://my-json-server.typicode.com/MasterJediKnight/animals-starwars/Page"
-  //   fetch(statistics)
-  //   .then(response => response.json())                                    	 
-  //   .then(function (stats) {
-  //       statistics_data = stats;
-  //       // console.log(republic_governor);
-  //       createSeparatist(statistics_data[0].StarWarsI[0].Separatist[0], statistics_data[0].StarWarsI[0].Republic[0].li, statistics_data[0].StarWarsI[0].Republic[0].image);
-  //   });
-  // }
-  // function createRepublic(element, subelement1, imaget)
-  // {
-  //   let newli1 = document.createElement("li");
-  //   newli1.textContent = subelement1;
-  //   let divmod= document.getElementById("Republic");
-  //   divmod.appendChild(newli1);
-  //   toimage_rep(element,subelement1);
-  // }
-  // function toimage_rep(obj, subelement1) {
-  //    var img = new Image();
-  //    img.src = obj.image;
-  //    img.setAttribute("Id", "myImg");
-  //    img.setAttribute("onclick", "showImg(this)");
-  //    img.setAttribute("style","width:100%;max-width:300px");
-  //    img.setAttribute("alt", subelement1);
-  //    document.getElementById("Republic").appendChild(img);
-  // }
+  let b_csi = document.getElementById("csi");
+  let dr_repbut = document.getElementById("federation");
+  b_repbut.addEventListener("click", () =>{
+    if(getComputedStyle(dr_repbut).display != "none"){
+      leavesw();
+    }
+    else
+    {
+      leavesw();
+      replace_footer();
+      document.getElementById('federation').style.display = 'block';
+      leaveall();
+    }
+  })
+
+  function getSeperatist()
+  {
+    var statistics = "https://my-json-server.typicode.com/MasterJediKnight/animals-starwars/Page"
+    fetch(statistics)
+    .then(response => response.json())                                    	 
+    .then(function (stats) {
+        statistics_data = stats;
+        // console.log(republic_governor);
+        let i = 0;
+        for(i = 0; i < 4; i++)
+        {
+          createSeparatist(statistics_data[0].StarWarsI[0].Separatist[0], statistics_data[0].StarWarsI[0].Separatist[0].li);
+        }
+    });
+  }
+  function createSeparatist(element, subelement1)
+  {
+    let newli1 = document.createElement("li");
+    newli1.textContent = subelement1;
+    let divmod= document.getElementById("federation");
+    divmod.appendChild(newli1);
+    toimage_sep(element);
+  }
+  function toimage_sep(obj) {
+     var img = new Image();
+     img.src = obj.image;
+     img.setAttribute("Id", "myImg");
+     img.setAttribute("onclick", "showImg(this)");
+     img.setAttribute("style","width:100%;max-width:300px");
+     img.setAttribute("alt", obj.alt);
+     document.getElementById("federation").appendChild(img);
+  }
   function mouseLeave0() {
     leaveall();
     document.getElementById("acc").innerHTML = "Accueil <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
@@ -238,3 +256,4 @@
   window.onload = leaveall();
   window.onload = leavesw();
   window.onload = getRepublic();
+  window.onload = getSeparatist();
