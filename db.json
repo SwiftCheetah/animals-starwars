@@ -58,12 +58,12 @@
                 {
                     "Neutral": [
                         {
-                            "li": "Shmi Skywalker, la mère d'anakin, ancienne esclave"
+                            "li": "Shmi Skywalker, la mère d'anakin, ancienne esclave",
                             "image": "../images/starwarsi/Shmi.jpeg",
                             "index": "1"
                         },
                         {
-                            "li": "Kgj est celui qui revient sur naboo pour affronter Darth maul avec son padawan. Il finit transpercé par Darth Maul"
+                            "li": "Kgj est celui qui revient sur naboo pour affronter Darth maul avec son padawan. Il finit transpercé par Darth Maul",
                             "image": "../images/starwarsi/Kgj.jpeg",
                             "index": "2"
                         },
