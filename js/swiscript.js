@@ -112,7 +112,7 @@
     else
     {
       leavesw();
-      document.getElementById("Footer").style.bottom ="27px";
+      document.getElementById('federation').style.display = 'block';
       replace_footer();
       leaveall();
     }
