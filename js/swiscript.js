@@ -35,24 +35,24 @@
       document.getElementById("sw").innerHTML = "Star Wars <img width='20px' src='../icons/round_keyboard_arrow_left_black_18dp.png'>";
     }
   })
-  let b_neutralsyst = document.getElementById("neutralsyst");
-  let dr_neutralsyst = document.getElementById("Celeste");
-  b_neutralsyst.addEventListener("click", () =>{
-    if(getComputedStyle(dr_neutralsyst).display != "none"){
-      leavesw();
-    }
-    else
-    {
-      leavesw();
-      replace_footer();
-      document.getElementById('Celeste').style.display = 'block';
-      document.getElementById('Terrestre').style.display = 'none';
-      document.getElementById('Republic').style.display = 'none';
-      leaveall();
-    }
-  })
+  // let b_sith = document.getElementById("sith");
+  // let dr_sith = document.getElementById("Celeste");
+  // b_sith.addEventListener("click", () =>{
+  //   if(getComputedStyle(dr_sith).display != "none"){
+  //     leavesw();
+  //   }
+  //   else
+  //   {
+  //     leavesw();
+  //     replace_footer();
+  //     document.getElementById('Celeste').style.display = 'block';
+  //     document.getElementById('federation').style.display = 'none';
+  //     document.getElementById('Republic').style.display = 'none';
+  //     leaveall();
+  //   }
+  // })
   let b_csi = document.getElementById("csi");
-  let dr_csi = document.getElementById("Terrestre");
+  let dr_csi = document.getElementById("federation");
   b_csi.addEventListener("click", () =>{
     if(getComputedStyle(dr_csi).display != "none"){
       // dr.style.display = "none";
@@ -93,7 +93,11 @@
         statistics_data = stats;
         var republic_governor = statistics_data[0].StarWarsI[0].Republic[0].li
         // console.log(republic_governor);
-        createRepublic(statistics_data[0].StarWarsI[0].Republic[0], statistics_data[0].StarWarsI[0].Republic[0].li, statistics_data[0].StarWarsI[0].Republic[0].image);
+        var i = 0;
+        for(i = 0; i < 5; i++)
+        {
+          createRepublic(statistics_data[0].StarWarsI[0].Republic[i], statistics_data[0].StarWarsI[0].Republic[i].li, statistics_data[0].StarWarsI[0].Republic[i].image);
+        }
     });
   }
   function createRepublic(element, subelement1, imaget)
@@ -113,6 +117,34 @@
      img.setAttribute("alt", subelement1);
      document.getElementById("Republic").appendChild(img);
   }
+  // function getSeperatist()
+  // {
+  //   var statistics = "https://my-json-server.typicode.com/MasterJediKnight/animals-starwars/Page"
+  //   fetch(statistics)
+  //   .then(response => response.json())                                    	 
+  //   .then(function (stats) {
+  //       statistics_data = stats;
+  //       // console.log(republic_governor);
+  //       createSeparatist(statistics_data[0].StarWarsI[0].Separatist[0], statistics_data[0].StarWarsI[0].Republic[0].li, statistics_data[0].StarWarsI[0].Republic[0].image);
+  //   });
+  // }
+  // function createRepublic(element, subelement1, imaget)
+  // {
+  //   let newli1 = document.createElement("li");
+  //   newli1.textContent = subelement1;
+  //   let divmod= document.getElementById("Republic");
+  //   divmod.appendChild(newli1);
+  //   toimage_rep(element,subelement1);
+  // }
+  // function toimage_rep(obj, subelement1) {
+  //    var img = new Image();
+  //    img.src = obj.image;
+  //    img.setAttribute("Id", "myImg");
+  //    img.setAttribute("onclick", "showImg(this)");
+  //    img.setAttribute("style","width:100%;max-width:300px");
+  //    img.setAttribute("alt", subelement1);
+  //    document.getElementById("Republic").appendChild(img);
+  // }
   function mouseLeave0() {
     leaveall();
     document.getElementById("acc").innerHTML = "Accueil <img width='20px' src='../icons/round_keyboard_arrow_down_black_18dp.png'>";
@@ -199,8 +231,8 @@
   }
   function leavesw()
   { 
-    document.getElementById('Celeste').style.display = 'none';
-    document.getElementById('Terrestre').style.display = 'none';
+    // document.getElementById('Celeste').style.display = 'none';
+    document.getElementById('federation').style.display = 'none';
     document.getElementById('Republic').style.display = 'none';
   } 
   window.onload = leaveall();
