@@ -117,9 +117,9 @@
      document.getElementById("Republic").appendChild(img);
   }
   let b_csi = document.getElementById("csi");
-  let dr_repbut = document.getElementById("federation");
-  b_repbut.addEventListener("click", () =>{
-    if(getComputedStyle(dr_repbut).display != "none"){
+  let dr_csi= document.getElementById("federation");
+  b_csi.addEventListener("click", () =>{
+    if(getComputedStyle(dr_csi).display != "none"){
       leavesw();
     }
     else
