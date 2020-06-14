@@ -51,21 +51,7 @@
   //     leaveall();
   //   }
   // })
-  let b_csi = document.getElementById("csi");
-  let dr_csi = document.getElementById("federation");
-  b_csi.addEventListener("click", () =>{
-    if(getComputedStyle(dr_csi).display != "none"){
-      // dr.style.display = "none";
-      leavesw();
-    }
-    else
-    {
-      leavesw();
-      document.getElementById("Footer").style.bottom ="27px";
-      replace_footer();
-      leaveall();
-    }
-  })
+ 
   let b_repbut = document.getElementById("repbut");
   let dr_repbut = document.getElementById("Republic");
   b_repbut.addEventListener("click", () =>{
@@ -117,16 +103,17 @@
      document.getElementById("Republic").appendChild(img);
   }
   let b_csi = document.getElementById("csi");
-  let dr_csi= document.getElementById("federation");
+  let dr_csi = document.getElementById("federation");
   b_csi.addEventListener("click", () =>{
     if(getComputedStyle(dr_csi).display != "none"){
+      // dr.style.display = "none";
       leavesw();
     }
     else
     {
       leavesw();
+      document.getElementById("Footer").style.bottom ="27px";
       replace_footer();
-      document.getElementById('federation').style.display = 'block';
       leaveall();
     }
   })
