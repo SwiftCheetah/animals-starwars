@@ -106,15 +106,15 @@
     newli1.textContent = subelement1;
     let divmod= document.getElementById("Republic");
     divmod.appendChild(newli1);
-    toimage_rep(element, element.alt);
+    toimage_rep(element);
   }
-  function toimage_rep(obj, elementalt) {
+  function toimage_rep(obj) {
      var img = new Image();
      img.src = obj.image;
      img.setAttribute("Id", "myImg");
      img.setAttribute("onclick", "showImg(this)");
      img.setAttribute("style","width:100%;max-width:300px");
-     img.setAttribute("alt", elemenalt);
+     img.setAttribute("alt", obj.alt);
      document.getElementById("Republic").appendChild(img);
   }
   // function getSeperatist()
