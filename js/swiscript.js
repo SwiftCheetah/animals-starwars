@@ -96,11 +96,11 @@
         var i = 0;
         for(i = 0; i < 5; i++)
         {
-          createRepublic(statistics_data[0].StarWarsI[0].Republic[i], statistics_data[0].StarWarsI[0].Republic[i].li, statistics_data[0].StarWarsI[0].Republic[i].image);
+          createRepublic(statistics_data[0].StarWarsI[0].Republic[i], statistics_data[0].StarWarsI[0].Republic[i].li);
         }
     });
   }
-  function createRepublic(element, subelement1, imaget)
+  function createRepublic(element, subelement1)
   {
     let newli1 = document.createElement("li");
     newli1.textContent = subelement1;
