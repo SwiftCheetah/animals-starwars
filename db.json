@@ -12,25 +12,25 @@
                         },
                         {
                             "li": "Obi-Wan Kenobi, Padawan de Qui-Gon Jinn, il accompagne celui-ci pour trouver une solution diplomatique à l'embargo de la Fédération du Commerce contre Naboo, planète faisant partie de la République. Les séparatistes tentent de les empoisonner avec du gas, mais les deux Jedi arrivent à s'échapper et à rejoindre Naboo. Ils libèrent la reine faites prisonnière, et l'aident à quitter sa planète malgré le blocus. Suite à des dégats le vaisseau et contraint de se poser sur Tatooine pour être réparer. Les réparations finies, ils repatent pour Coruscant. Après l'élection de Palpatine, ils racompagnent la reine de Naboo et la guerre éclate entre les Gungans et les forces droides des Séparatistes.",
-                            "image": "../images/starwarsi/obiwan.jpg",
+                            "image": "../images/starwars1/obiwan.jpg",
                             "alt" :"Obiwan Kenobi, Padawan",
                             "index": "2"
                         },
                         {
                             "li": "Qui-Gon Jinn, Maître Jedi, libre de pensée, et contrairement à d'autres Jedi, il valorise de vivre dans le moment présent comme le meilleur moyen de communier avec la Force. En mission su ",
-                            "image": "../images/starwarsi/liam-neesn-as-qui-gon-jinn.jpeg",
+                            "image": "../images/starwars1/liam-neesn-as-qui-gon-jinn.jpeg",
                             "alt": "Qui-Gon Jinn, Maître Jedi",
                             "index": "3"
                         },
                         {
                             "li": "Anakin Skywalker",
-                            "image": "../images/starwarsi/anakinskywalker.jpg",
+                            "image": "../images/starwars1/anakinskywalker.jpg",
                             "alt":"Anakin Skywalker (young)",
                             "index": "4"
                         },
                         {
                             "li": "Le Haut conseil Jedi, corps gouvernant l'Ordre Jedi, il est composé de douze Maîtres Jedi, dont un qui était le Grand Maître. Réuni dans la Tour du Haut Conseil du Temple Jedi sur Coruscant (planète où était le système politique de la République)",
-                            "image": "../images/starwarsi/jedicouncil.jpeg",
+                            "image": "../images/starwars1/jedicouncil.jpeg",
                             "alt": "Haut Conseil Jedi (Temple Jedi Coruiscant)",
                             "index": "5"
                         }
