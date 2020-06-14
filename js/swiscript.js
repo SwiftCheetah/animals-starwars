@@ -118,7 +118,7 @@
     }
   })
 
-  function getSeperatist()
+  function getSeparatist()
   {
     var statistics = "https://my-json-server.typicode.com/MasterJediKnight/animals-starwars/Page"
     fetch(statistics)
